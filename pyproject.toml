@@ -4,10 +4,12 @@ version = "0.1.0"
 description = ""
 authors = ["Евгений Смирнов <e.valerevich@gmail.com>"]
 readme = "README.md"
-packages = [{include = "brain_games"}]
+packages = [
+  { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 
 
 [build-system]
@@ -15,4 +17,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main" #main - указывает на название выполняемой при запуске фунции
+brain-games = "brain_games.scripts.brain_games:main"
